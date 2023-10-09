@@ -1,0 +1,185 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    
+}
+:root{
+    --firstbackground:#12262a;
+    --secondbackground:#141e20;
+    --firstcolor:rgb(175, 186, 50);
+    --secondcolor:rgb(32, 187, 159);
+    --font :rgb(192, 192, 192);
+    --borderbtn: rgb(211, 227, 27);
+}
+
+/* section 1 */
+.sec1 {
+    height: 30vh;
+    position: relative;
+    background-image: linear-gradient(rgba(85, 74, 74, 0.393),rgba(85, 74, 74, 0.393)),url("../src/meeting.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 20px;
+}
+.sec1 .container header {
+    display: flex;
+    justify-content: space-between;
+} 
+.sec1 .container header .logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.sec1 .container header nav ul{
+    display: flex;
+}
+.sec1 .container header nav ul li{
+    margin: 10px;
+    list-style: none;
+}
+.sec1 .container header nav ul li .selected::before{
+    content:"Cour";
+    padding: 10px 0px 10px 10px;
+    background: linear-gradient(var(--firstbackground),var(--firstbackground)) padding-box,
+                linear-gradient(to right, rgba(175, 186, 50, 0.212),rgb(175, 186, 50)) border-box ;
+    border-bottom: 3px solid transparent;
+    border-bottom-left-radius: 15px;
+}
+.sec1 .container header nav ul li .selected::after{
+    content:"ses";
+    padding: 10px 10px 10px 0px;
+    background: linear-gradient(var(--firstbackground),var(--firstbackground)) padding-box,
+                linear-gradient(to right,rgb(175, 186, 50), rgba(175, 186, 50, 0.212)) border-box ;
+    border-bottom: 3px solid transparent;
+    margin-left: -4px;
+    border-top-right-radius:15px ;
+    
+}
+.sec1 .container header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.sec1 .container .path{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+/* section 2 */
+.sec2{
+    height: 280vh;
+    background-color: var(--secondbackground);
+}
+.sec2 .container .up{
+    padding-top: 40px;
+    display: flex;
+}
+.sec2 .container .up h5{
+    font-size: 20px;
+    font-weight: bold;
+}
+.sec2 .container .up .search{
+    display: flex;
+    width: 500px;
+    height: 50px;
+    background-color: #12262aa6;
+    border: 1px solid var(--secondcolor);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: 90px;
+    margin-right: 30px;
+}
+.sec2 .container .up .search i{
+    color: rgb(127, 124, 124);
+    padding-top: 3px;
+    padding-right: 30px;
+}
+.sec2 .container .up .search p{
+    color: rgb(127, 124, 124);
+}
+.sec2 .container .up button{
+    width: 260px;
+    background-color: var(--firstcolor);
+    border: 2px solid var(--borderbtn);
+    border-radius: 10px;
+}
+.sec2 .container .courses .design{
+    padding-top: 30px;
+}
+.sec2 .container .courses .design .caption{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px ;
+}
+.sec2 .container .courses .design .caption h5{
+    width: 100px;
+    font-size: 20px;
+    border-left: 3px solid var(--secondcolor);
+    padding-left: 4px;
+    padding-top: 3px;
+    background-image: linear-gradient(to right,rgba(30, 188, 199, 0.44),rgba(50, 177, 186, 0));
+}
+.sec2 .container .courses .design .caption p{
+    color: var(--firstcolor);
+}
+.sec2 .container .courses .design .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.sec2 .container .courses .design .cards .card{
+    width: 300px;
+    background-color: var(--firstbackground);
+    border-radius: 10px;
+}
+.sec2 .container .courses .design .cards .card img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.sec2 .container .courses .design .cards .card .title{
+    padding: 10px;
+    color: var(--font);
+}
+.sec2 .container .courses .design .cards .card .detalies{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: -20px;
+}
+.sec2 .container .courses .design .cards .card .detalies p{
+    color:rgb(147, 146, 146);
+    letter-spacing: -1px;
+}
+.sec2 .container .courses .design .cards .card  .instructor{
+    padding: 10px;
+    color:rgb(147, 146, 146);
+    margin-top: -30px;
+}
+.sec2 .container .courses .design .cards .card .rateandprice{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: -25px;
+}
+.sec2 .container .courses .design .cards .card .rateandprice .price{
+    color: var(--firstcolor);
+}
+.sec2 .container .movetopages{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 350px;
+}
+.sec2 .container .movetopages i{
+    padding-top: 6px;
+}
+.sec2 .container .movetopages p{
+    padding-top: 3px;
+}
+.sec2 .container .movetopages .checked{
+    background-color: var(--firstcolor);
+    padding: 3px 5px;
+    border-radius: 7px;
+}

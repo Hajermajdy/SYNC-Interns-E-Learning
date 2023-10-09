@@ -1,0 +1,153 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    
+}
+:root{
+    --firstbackground:#12262a;
+    --secondbackground:#141e20;
+    --firstcolor:rgb(175, 186, 50);
+    --secondcolor:rgb(32, 187, 159);
+    --font :rgb(192, 192, 192);
+    --borderbtn: rgb(211, 227, 27);
+}
+
+/* section 1 */
+.sec1 {
+    height: 30vh;
+    position: relative;
+    background-image: linear-gradient(rgba(85, 74, 74, 0.393),rgba(85, 74, 74, 0.393)),url("../src/meeting.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 20px;
+}
+.sec1 .container header {
+    display: flex;
+    justify-content: space-between;
+} 
+.sec1 .container header .logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.sec1 .container header nav ul{
+    display: flex;
+}
+.sec1 .container header nav ul li{
+    margin: 10px;
+    list-style: none;
+}
+.sec1 .container header nav ul li .selected::before{
+    content:"Boo";
+    padding: 10px 0px 10px 10px;
+    background: linear-gradient(var(--firstbackground),var(--firstbackground)) padding-box,
+                linear-gradient(to right, rgba(175, 186, 50, 0.212),rgb(175, 186, 50)) border-box ;
+    border-bottom: 3px solid transparent;
+    border-bottom-left-radius: 15px;
+}
+.sec1 .container header nav ul li .selected::after{
+    content:"ks";
+    padding: 10px 10px 10px 0px;
+    background: linear-gradient(var(--firstbackground),var(--firstbackground)) padding-box,
+                linear-gradient(to right,rgb(175, 186, 50), rgba(175, 186, 50, 0.212)) border-box ;
+    border-bottom: 3px solid transparent;
+    border-top-right-radius:15px ;
+}
+.sec1 .container header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.sec1 .container .path{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+/* section 2 */
+.sec2{
+    height: 170vh;
+    background-color: var(--secondbackground);
+}
+.sec2 .container .up{
+    padding-top: 40px;
+    display: flex;
+}
+.sec2 .container .up h5{
+    font-size: 20px;
+    font-weight: bold;
+}
+.sec2 .container .up .search{
+    display: flex;
+    width: 500px;
+    height: 50px;
+    background-color: #12262aa6;
+    border: 1px solid var(--secondcolor);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: 90px;
+    margin-right: 30px;
+}
+.sec2 .container .up .search i{
+    color: rgb(127, 124, 124);
+    padding-top: 3px;
+    padding-right: 30px;
+}
+.sec2 .container .up .search p{
+    color: rgb(127, 124, 124);
+}
+.sec2 .container .up button{
+    width: 260px;
+    background-color: var(--firstcolor);
+    border: 2px solid var(--borderbtn);
+    border-radius: 10px;
+}
+/* books */
+.sec2 .container .books{
+    padding-top: 50px;
+}
+.sec2 .container .books .coding span{
+    font-size: 25px;
+    border-left: 3px solid var(--secondcolor);
+    padding-left: 4px;
+    background-image: linear-gradient(to right,rgba(30, 188, 199, 0.44),rgba(50, 177, 186, 0));
+}
+.sec2 .container .books .coding{
+    margin-bottom: 60px;
+}
+.sec2 .container .books .coding .boxs{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.sec2 .container .books .coding .boxs i{
+    font-size: 30px;
+    margin-top: 110px;
+    height: 20px;
+}
+.sec2 .container .books .coding .boxs .book{
+    background-color:  #12262aa6;
+    width: 200px;
+    text-align: center;
+}
+.sec2 .container .books .coding .boxs .book img{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.sec2 .container .movetopages{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 350px;
+}
+.sec2 .container .movetopages i{
+    padding-top: 6px;
+}
+.sec2 .container .movetopages p{
+    padding-top: 3px;
+}
+.sec2 .container .movetopages .checked{
+    background-color: var(--firstcolor);
+    padding: 3px 5px;
+    border-radius: 7px;
+}

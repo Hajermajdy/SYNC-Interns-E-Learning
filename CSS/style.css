@@ -1,0 +1,388 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+
+}
+:root{
+    --firstbackground:#12262a;
+    --secondbackground:#141e20;
+    --firstcolor:rgb(175, 186, 50);
+    --secondcolor:rgb(32, 187, 159);
+}
+
+/* section 1 */
+.sec1 {
+    height: 90vh;
+    position: relative;
+    background-color: var(--firstbackground);
+    padding-top: 20px;
+}
+.sec1 .container header {
+    display: flex;
+    justify-content: space-between;
+} 
+.sec1 .container header .logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.sec1 .container header nav ul{
+    display: flex;
+}
+.sec1 .container header nav ul li{
+    margin: 10px;
+    list-style: none;
+}
+.sec1 .container header nav ul li .selected::before{
+    content:"Ho";
+    padding-bottom: 10px;
+    background: linear-gradient(var(--firstbackground),var(--firstbackground)) padding-box,
+                linear-gradient(to right, rgba(175, 186, 50, 0.212),rgb(175, 186, 50)) border-box ;
+    border-bottom: 3px solid transparent;
+}
+.sec1 .container header nav ul li .selected::after{
+    content:"me";
+    padding-bottom: 10px;
+    background: linear-gradient(var(--firstbackground),var(--firstbackground)) padding-box,
+                linear-gradient(to right,rgb(175, 186, 50), rgba(175, 186, 50, 0.212)) border-box ;
+    border-bottom: 3px solid transparent;
+    margin-left: -4px;
+}
+.sec1 .container header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.sec1 .container .text {
+    position: absolute;
+    top: 200px;
+}
+.sec1 .container .text h2 .txt1{
+    border-left: 3px solid var(--secondcolor);
+    padding-left: 4px;
+    background-image: linear-gradient(to right,rgba(30, 188, 199, 0.44),rgba(50, 177, 186, 0));
+}
+.sec1 .container .text h2 .txt2{
+    border-left: 3px solid var(--firstcolor);
+    padding-left: 4px;
+    background-image: linear-gradient(to right,rgba(175, 186, 50, 0.515),rgba(50, 177, 186, 0));
+}
+.sec1 .container .text button{
+    border: none;
+    padding: 10px 0px;
+    width: 180px;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: var(--secondcolor);
+}
+/* section 2 */
+.sec2 {
+    height: 35vh;
+    background-color: var(--secondbackground);
+    position: relative;
+    color: white;
+}
+.sec2 .categorise{
+    display: flex;
+    position: absolute;
+    top: -50px;
+    left: 260px;
+}
+.sec2 .categorise .box{
+    width: 140px;
+    height: 160px;
+    background-color: var(--secondbackground);
+    margin-left: 60px;
+    padding-top: 25px;
+    text-align: center;
+    box-shadow: 0px 10px 8px #0f1b1e;;
+}
+.sec2 .categorise .box i{
+    margin-bottom: 30px;
+}
+/* section 3 */
+.sec3{
+    height: 75vh;
+    background-color: var(--firstbackground);
+    position: relative;
+}
+.sec3 .container h4{
+    padding: 80px 0px 60px 0px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.sec3 .container .Categories {
+    display: flex;
+    position: absolute;
+    left: 130px;
+}
+.sec3 .container .Categories span{
+    border: 1px solid white;
+    padding-top: 60px;
+    width: 260px;
+    height: 160px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+/* section 4 */
+
+.sec4{
+    height: 100vh;
+    background-color: var(--secondbackground);
+    position: relative;
+}
+.sec4 .container .navbar h4{
+    padding: 40px 0px ;
+    font-size: 30px;
+    font-weight: 700;
+}
+.sec4 .container .navbar p{
+    color: var(--firstcolor);
+}
+.sec4 .container .images{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 180px 180px;
+    grid-gap: 50px;
+}
+.sec4 .container .images .bigimage{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-image: linear-gradient(rgba(142, 139, 139, 0.384),rgba(142, 139, 139, 0.384)),url("../src/design.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;  
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 180px;
+}
+.sec4 .container .images .smallimages{
+    grid-row: 1/3;
+    grid-column: 3/5;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 180px 180px;
+    grid-gap: 50px;
+}
+.sec4 .container .images .smallimages .img1,
+.sec4 .container .images .smallimages .img2,
+.sec4 .container .images .smallimages .img3,
+.sec4 .container .images .smallimages .img4{
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;  
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 75px;
+}
+.sec4 .container .images .smallimages .img1{
+    background-image: linear-gradient(rgba(142, 139, 139, 0.384),rgba(142, 139, 139, 0.384)),url("../src/marketing.jpg");
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+}
+.sec4 .container .images .smallimages .img2{
+    background-image: linear-gradient(rgba(142, 139, 139, 0.384),rgba(142, 139, 139, 0.384)),url("../src/art.jpg");
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.sec4 .container .images .smallimages .img3{
+    background-image: linear-gradient(rgba(142, 139, 139, 0.384),rgba(142, 139, 139, 0.384)),url("../src/business.jpg");
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.sec4 .container .images .smallimages .img4{
+    background-image: linear-gradient(rgba(142, 139, 139, 0.384),rgba(142, 139, 139, 0.384)),url("../src/science.jpg");
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+/* section 5 */
+.sec5{
+    height: 100vh;
+    background-color: var(--secondbackground);
+}
+.sec5 .container .title{
+    padding-left: 700px;
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--firstcolor);
+    letter-spacing: 6px;
+}
+.sec5 .container .details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.sec5 .container .details .rigthside{
+   display: flex;
+   position: relative;
+   margin-right: 40px;
+}
+.sec5 .container .details .rigthside img{
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    z-index: 1;
+}
+.sec5 .container .details .rigthside div{
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: rgba(50, 177, 186, 0.158);
+    border: 2px solid var(--secondcolor);
+    position: absolute;
+    top: 40px;
+    right: -50px;
+    z-index: 0;
+}
+.sec5 .container .details .leftside h3{
+    width: 330px;
+    line-height: 55px;
+    font-weight: 700;
+    font-size: 30px;
+    
+}
+.sec5 .container .details .leftside p{
+    width: 420px;
+    line-height: 40px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.sec5 .container .details .leftside button{
+    border: none;
+    background-color: var(--secondcolor);
+    width: 200px;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+/* section 6 */
+.sec6{
+    height: 100vh;
+    background-color: var(--secondbackground);
+}
+.sec6 .container .title{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--secondcolor);
+    letter-spacing: 3px;
+}
+.sec6 .container .details{
+    display: flex;
+    /* justify-content: spac; */
+    margin-top: 40px;
+}
+.sec6 .container .details .rigthside{
+   display: flex;
+   position: relative;
+   margin-right: 70px;
+}
+.sec6 .container .details .rigthside img{
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    z-index: 1;
+}
+.sec6 .container .details .rigthside div{
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: rgba(50, 177, 186, 0.158);
+    border: 2px solid var(--secondcolor);
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    z-index: 0;
+}
+.sec6 .container .details .leftside h3{
+    width: 330px;
+    line-height: 55px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.sec6 .container .details .leftside .cards{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.sec6 .container .details .leftside .cards .card{
+    width: 130px;
+    height: 180px;
+    background-color: rgba(50, 177, 186, 0.158);
+    margin-right: 30px;
+    padding-top: 25px;
+    text-align: center;
+    border: 1px solid var(--secondcolor);
+}
+.sec6 .container .details .leftside .cards .card i{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.sec6 .container .details .leftside .btns{
+    display: flex;
+    margin-top: 100px;justify-content: space-around;
+}
+.sec6 .container .details .leftside .btns button{
+    border: none;
+    width: 200px;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+.sec6 .container .details .leftside .btns .btn1{
+    background-color: var(--secondcolor);
+}
+.sec6 .container .details .leftside .btns .btn2{
+    background-color: transparent;
+    border: 1px solid var(--firstcolor);
+}
+/* section 7 */
+.sec7{
+    height: 100vh;
+    background-color: var(--secondbackground);
+    padding-top: 120px;
+}
+.sec7 .container{
+    display: flex;
+    justify-content: space-between;
+}
+.sec7 .container .leftside p{
+    width: 300px;
+    padding-top: 20px;
+}
+.sec7 .container .leftside .email{
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 350px;
+}
+.sec7 .container .leftside  button{
+    border: none;
+    width: 200px;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: var(--firstcolor);
+}
+.sec7 .container .leftside .footer{
+    padding-top: 130px;
+    color: rgba(196, 196, 195, 0.516);
+    font-size: 12px;
+}
+
+.sec7 .container .rigthside{
+    display: flex;
+}
+.sec7 .container .rigthside .start{
+    margin: 20px;
+}
+.sec7 .container .rigthside .start h4{
+    margin-bottom: 30px;
+}
+.sec7 .container .rigthside .start p{
+    font-size: 13px;
+    color: rgb(196, 196, 195);
+}

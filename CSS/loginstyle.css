@@ -1,0 +1,120 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    background-color: var(--firstbackground);
+}
+:root{
+    --firstbackground:#12262a;
+    --secondbackground:#141e20;
+    --firstcolor:rgb(175, 186, 50);
+    --secondcolor:rgb(32, 187, 159);
+    --font :rgb(192, 192, 192);
+    --borderbtn: rgb(211, 227, 27);
+}
+.sec1 .container header .logo{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.sec1 .container header .logo a{
+    text-decoration: none;
+    color: white;
+}
+/* section 2 */
+.sec2{
+    text-align: center;
+    padding-top: 100px;
+}
+.sec2 h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+.sec2 input{
+    border: 1px solid var(--font);
+    border-radius: 10px;
+    padding: 15px 200px 15px 30px;
+    margin-top: 30px;
+}
+.sec2 .forgetpassword{
+    font-size: 12px;
+    color: var(--font);
+    margin-top: 10px;
+    position: relative;
+    left: 690px;
+    width: 130px;
+}
+.sec2 button{
+    width: 350px;
+    padding: 10px 0;
+    background-color: var(--firstcolor);
+    border: 2px solid var(--borderbtn);
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.sec2 .or{
+    font-size: 12px;
+    color: var(--font);
+    margin-top: 10px;
+}
+.sec2 .signup p{
+    font-size: 15px;
+    color: var(--font);
+}
+.sec2 .signup span{
+    color: var(--firstcolor);
+    font-weight: bold;
+    cursor: pointer;
+}
+/* section 3 */
+.sec3{
+    text-align: center;
+    padding-top: 60px;
+    height: 110vh;
+    display: none;
+}
+.sec3 h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+.sec3 .input .txt{
+    padding: 15px 30px 15px 20px;
+    width: 140px;
+}
+.sec3 input{
+    border: 1px solid var(--font);
+    border-radius: 10px;
+    padding: 15px 200px 15px 20px;
+    margin-top: 30px;
+}
+.sec3 button{
+    width: 350px;
+    padding: 10px 0;
+    background-color: var(--secondcolor);
+    border: 2px solid rgb(66, 233, 202);;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.sec3 .or{
+    font-size: 12px;
+    color: var(--font);
+    margin-top: 10px;
+}
+.sec3 .login p{
+    font-size: 15px;
+    color: var(--font);
+}
+.sec3 .login span{
+    color: var(--secondcolor);
+    font-weight: bold;
+    cursor: pointer;
+}
+.activity{
+    display: block;
+}
+.notactivity{
+    display: none;
+} 
